@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BookStore | Livros Infantil</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!--INICIO - Menu de Navegação-->
+  <div class="container-fluid bg-warning">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/bookstore.png" height="50" alt="BookStore">
+      </a>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><i
+          class="fas fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav col-5">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="sobre.html" class="nav-item nav-link">Quem Somos</a>
+          <a href="faq.html" class="nav-item nav-link">Dúvidas</a>
+          <a href="contato.html" class="nav-item nav-link">Contato</a>
+        </div>
+        <!--Pesquisar-->
+        <form class="menu-form col-xl-4 col-lg-4 col-md-3 col-sm-3">
+          <input type="text" placeholder="Pesquise em nosso site...">
+          <button><i class="fas fa-search"></i></button>
+        </form>
+        <!--Menu Lateral-->
+        <div class="col-xl-3">
+          <div class="menu-lateral">
+            <div class="menu-icon">
+              <i class="far fa-user"></i>
+              <!--Login-->
+              <a class="menu-inferior" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                href="#">Entrar</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="email-dropdown">Endereço de e-mail</label>
+                    <input type="email" class="form-control" id="dropdown-campo-menu1">
+                  </div>
+                  <div class="form-group">
+                    <label for="senha-dropdown">Senha</label>
+                    <input type="password" class="form-control" id="dropdown-campo-senha">
+                  </div>
+                  <div class="row align-items-center justify-content-center">
+                    <button type="submit" class="btn botao-pr">Entrar</button>
+                    <a href="cadastro.html" class="btn btn-outline-dark">Cadastre-se</a>
+                  </div>
+                </form>
+                <a class="dropdown-item text-secondary" href="#">Esqueceu a senha?</a>
+                <a class="dropdown-item text-secondary" href="lista.html">Meu Perfil</a>
+                <a class="dropdown-item text-secondary" href="painel-admin.html">Painel Administrativo</a>
+              </div>
+            </div>
+            <!--Carrinho-->
+            <div class="menu-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <a href="sacola.html">Carrinho </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--menu-inferior-->
+  <nav class="menu-bottom">
+    <div class="container">
+      <ul class="menu-inferior row justify-content-center">
+        <li><a href="#"> Desenvolvimento</a>
+          <ul class="sub-menu">
+            <li><a href="desenvolvimento-pessoal.html">Desenvolvimento Pessoal</a></li>
+            <li><a href="desenvolvimento-financeiro.html">Desenvolvimento Financeiro</a></li>
+          </ul>
+        </li>
+        <li><a href="ficcao.html">Ficção</a></li>
+        <li><a href="romance.html">Romance</a></li>
+        <li><a href="infantil.html">Infantil</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--FIM - Menu de Navegação-->
+
+  <!--Livros-->
+  <main>
+    <div class="container mt-4 mb-5 pt-1 pb-1">
+      <div class="card-group card-body row justify-content-center">
+        <div class="card-deck" style="width: 70rem;">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top capa-livro" src="img/livro17.jpg" alt="Imagem de capa do card">
+              <h5 class="card-title"><a href="livro17.html">CHAPEUZINHO AMARELO</h5></a>
+              <p class="card-text">Chico Buarque</p>
+              <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top capa-livro" src="img/livro18.jpg" alt="Imagem de capa do card">
+              <h5 class="card-title"><a href="livro18.html">MENINA BONITA DO LAÇO DE FITA</h5></a>
+              <p class="card-text">Ana Maria Machado</p>
+              <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top capa-livro" src="img/livro19.jpg" alt="Imagem de capa do card">
+              <h5 class="card-title"><a href="livro19.html">A CASA SONOLENTA</h5></a>
+              <br>
+              <p class="card-text">Audrey Wood</p>
+              <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top capa-livro" src="img/livro20.jpg" alt="Imagem de capa do card">
+              <h5 class="card-title"><a href="livro20.html">O GRÚFALO</h5></a>
+              <br>
+              <p class="card-text">Julia Donaldson Axel Scheffler</p>
+              <a href="#" class="btn btn-success">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--FIM - Livros-->
+
+
+
+  <footer>
+    <!-- Footer Start-->
+    <div class="footer-area">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4">
+            <div class="mb-50">
+              <div class="mb-30">
+                <div class="footer-tittle">
+                  <div class="footer-sobre">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                      labore.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                      labore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+            <div class="mb-50">
+              <div class="footer-col">
+                <h4>Contatos</h4>
+                <ul>
+                  <li> BookStore</li>
+                  <li> Endereço</li>
+                  <li> +55 71 9 9999-9999</li>
+                  <li> mail@example.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+            <div class="mb-50">
+              <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="sacola.html">Carrinho</a></li>
+                  <li><a href="cadastro.html">Cadastre-se</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer bottom -->
+
+      </div>
+    </div>
+    <div class="container-fluid footer-bottom">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div>
+            <p>Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> BookStore</p>
+          </div>
+
+          <div id="footer-social">
+            <a href="mailto:webmaster@example.com"><i class="fas fa-envelope fa-lg"></i></a>
+            <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End-->
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="js/formulario.js"></script>
+</body>
+
+</html>

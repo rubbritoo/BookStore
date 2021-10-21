@@ -1,0 +1,352 @@
+
+/*Menu principal*/
+.navbar-nav{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.menu-lateral .menu-icon {
+	display: inline-block;
+	font-size: 14px;
+}
+
+.menu-lateral .menu-icon i {
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.menu-lateral .menu-icon a {
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+}
+
+.menu-lateral .menu-icon a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu-lateral .menu-icon:first-child {
+	margin-right: 20px;
+}
+
+.menu-form {
+	width: 100%;
+	position: relative;
+	padding: 0 10px;
+}
+
+.menu-form input{
+	width: 100%;
+	height: 40px;
+	font-size: 14px;
+	border-radius: 50px;
+	border: none;
+	padding: 15px;
+	background: #fff;
+}
+.menu-form button {
+	position: absolute;
+	height: 100%;
+	right: 18px;
+	top: 0;
+	font-size: 18px;
+	color: #000;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+.menu-bottom {
+	background: #282828;
+}
+
+.menu-inferior li {
+	display: inline-block;
+	position: relative;
+}
+
+ul.menu-inferior.row{
+	margin-bottom: 0;
+}
+
+.menu-inferior li a {
+	display: inline-block;
+	font-size: 16px;
+	color: #ffffff;
+	margin-right: 50px;
+	line-height: 1;
+	padding: 10px 0;
+	position: relative;
+	text-decoration: none;
+}
+
+.menu-inferior li:hover .sub-menu {
+	visibility: visible;
+	opacity: 1;
+	margin-top: 0;
+}
+
+.menu-inferior li:hover>a {
+	color: #ffc107;
+	background-color: #282828;
+}
+
+.menu-inferior .sub-menu {
+	position: absolute;
+	list-style: none;
+	width: 160px;
+	left: 0;
+	top: 100%;
+	padding: 5px 0;
+	visibility: hidden;
+	opacity: 0;
+	margin-top: 50px;
+	background: #fff;
+	z-index: 99;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+	-webkit-box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.menu-inferior .sub-menu li {
+	display: block;
+}
+
+.menu-inferior .sub-menu li a {
+	display: block;
+	color: #000;
+	margin-right: 0;
+	padding: 8px 20px;
+	text-align: center;
+}
+
+.menu-inferior .sub-menu li a:hover {
+	color: #ffc107;
+}
+
+a.dropdown-item {
+	margin: 0;
+	text-align: center;
+	padding-bottom: 5;
+	align-content: center;
+}
+
+a.dropdown-item:active {
+	margin: 0;
+	text-align: center;
+	padding-bottom: 5;
+	align-content: center;
+	background-color: #ffc107;
+	color: #fff;
+}
+/*FIM - Menu principal*/
+
+/* Main */
+
+body {
+    font-family: 'Antic'; 
+}
+
+.card {
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+.contact-icon {
+	margin-right: 20px;
+	text-align: center;
+}
+
+.contact-icon i, .contact-icon span {
+	color: #282828;
+	font-size: 27px;
+	align-items: center;
+}
+/* FIM - Main */
+
+
+/*Footer*/
+.footer-area{
+	background-color: #282828;
+	color: #fff;
+	margin-top: 10px;
+	padding-top: 20px;
+}
+.footer-bottom {
+	background-color: #1d1d1d;
+	padding: 10px;
+}
+
+.footer-bottom p{
+	color: #fff;
+	padding: 10px 15px 0px 0px;
+}
+
+#footer-social a{
+	color: #fff;
+	padding: 0px 7px 10px 7px;
+}
+
+.footer-area ul li a:hover {
+	color: #ffc107;
+	padding-left: 5px;
+}
+
+.footer-area ul a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-col ul {
+	list-style: none;
+	padding: 0;
+  }
+/*FIM - Footer*/
+
+/*livros*/
+
+.capa-livro {
+	object-fit: cover;
+	object-position: 0 0;
+	width: 100%;
+    height: 300px;
+}
+
+.img-thumb {
+	padding: 0.25rem;
+	background-color: #fff;
+	border: 4px solid transparent;
+	border-radius: 0.25rem;
+	max-width: 100%;
+	height: auto;
+  }
+
+.tabela {
+	text-align: left;
+}
+
+.img20 {
+	width: 284px;
+	height: 408px;
+}
+
+.img19 {
+	width: 284px;
+	height: 420px;
+}
+
+.img18 {
+	width: 284px;
+	height: 385px;
+}
+
+.img17 {
+	width: 284px;
+	height: 408px;
+}
+
+.img4 {
+	width: 284px;
+	height: 390px;
+}
+
+.text-sucess {
+	font-size: 24px;
+	color: #007BFF;
+}
+
+body{
+	width:100%;
+}
+
+.noborder{
+	border-style: hidden;
+}
+/*FIM - Livros*/
+
+/*Diversos*/
+.botao-pr{
+	background-color:#ffc107;
+	color: #000;
+	margin-right: 5px;
+}
+
+.botao-pr:hover{
+	background-color:#e6ac00;
+	color: #000;
+	margin-right: 5px;
+}
+
+.hidden-stuff{
+	display: none;
+}
+
+.open-stuff{
+	display: inline-block;
+}
+
+.btn-lik {
+	font-weight: 400;
+	color: #282828;
+	text-decoration: none;
+  }
+  
+  .btn-lik:hover {
+	color: #282828;
+	text-decoration: none;
+  }
+  
+  .btn-lik:focus, .btn-lik.focus {
+	text-decoration: none;
+	box-shadow: none;
+  }
+
+
+/* FIM - Diversos*/
+
+/*Inicio config tabela (listagem dos livros): Definindo tabela com Thead fixo */
+thead {
+	width: 100%;
+ }
+tbody {
+	height: 600px;
+	overflow-y: scroll;
+	width: 100%;
+ }
+.t1 {
+	width: 30%;
+ }
+.t2 {
+	width: 40%;
+ }
+.t3 {
+	width: 30%;
+ }
+thead, tbody, tr, td, th {
+	display: block;
+ }
+td, th {
+	float: left;
+ }
+
+ .height-Line-table{
+	height: 235px;
+ }
+ /*Fim config Tabela*/
+
+ .invisivel {
+	display: none;
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BookStore | Cadastre-se</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!--INICIO - Menu de Navegação-->
+  <div class="container-fluid bg-warning">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/bookstore.png" height="50" alt="BookStore">
+      </a>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><i
+          class="fas fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav col-5">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="sobre.html" class="nav-item nav-link">Quem somos</a>
+          <a href="faq.html" class="nav-item nav-link">Dúvidas</a>
+          <a href="contato.html" class="nav-item nav-link">Contato</a>
+        </div>
+        <!--Pesquisar-->
+        <form class="menu-form col-xl-4 col-lg-4 col-md-3 col-sm-3">
+          <input type="text" placeholder="Pesquise em nosso site...">
+          <button><i class="fas fa-search"></i></button>
+        </form>
+        <!--Menu Lateral-->
+        <div class="col-xl-3">
+          <div class="menu-lateral">
+            <div class="menu-icon">
+              <i class="far fa-user"></i>
+              <!--Login-->
+              <a class="menu-inferior" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                href="#">Entrar</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="email-dropdown">Endereço de e-mail</label>
+                    <input type="email" class="form-control" id="dropdown-campo-menu1">
+                  </div>
+                  <div class="form-group">
+                    <label for="senha-dropdown">Senha</label>
+                    <input type="password" class="form-control" id="dropdown-campo-senha">
+                  </div>
+                  <div class="row align-items-center justify-content-center">
+                    <button type="submit" class="btn botao-pr">Entrar</button>
+                    <a href="cadastro.html" class="btn btn-outline-dark">Cadastre-se</a>
+                  </div>
+                </form>
+                <a class="dropdown-item text-secondary" href="#">Esqueceu a senha?</a>
+                <a class="dropdown-item text-secondary" href="lista.html">Meu Perfil</a>
+                <a class="dropdown-item text-secondary" href="painel-admin.html">Painel Administrativo</a>
+              </div>
+            </div>
+            <!--Carrinho-->
+            <div class="menu-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <a href="sacola.html">Carrinho </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!--menu-inferior-->
+  <nav class="menu-bottom">
+    <div class="container">
+      <ul class="menu-inferior row justify-content-center">
+        <li><a href="#"> Desenvolvimento</a>
+          <ul class="sub-menu">
+            <li><a href="desenvolvimento-pessoal.html">Desenvolvimento Pessoal</a></li>
+            <li><a href="desenvolvimento-financeiro.html">Desenvolvimento Financeiro</a></li>
+          </ul>
+        </li>
+        <li><a href="ficcao.html">Ficção</a></li>
+        <li><a href="romance.html">Romance</a></li>
+        <li><a href="infantil.html">Infantil</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--FIM - Menu de Navegação-->
+
+  <!-- Formulário Cadastro-->
+  <main>
+    <div class="container">
+      <h2 class="mt-5 text-center">Informe seus dados</h2>
+      <hr>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-8 order-md-1">
+          <form class="needs-validation" novalidate>
+
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label for="Nome">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Insira seu nome" required autofocus>
+                <div class="invalid-feedback">
+                  Nome obrigatório.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="Insira o sobrenome" required>
+                <div class="invalid-feedback">
+                  Sobrenome obrigatório.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="examplo@mail.com" required>
+                <div class="invalid-feedback">
+                  E-mail obrigatório.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Insira a senha" required>
+                <div class="invalid-feedback">
+                  Insira uma senha.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="conf-senha">Confirmar Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Confirme a senha" required>
+                <div class="invalid-feedback">
+                  Confirme a senha
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="telefone">Telefone</label>
+                <input type="text" class="form-control" id="telefone" placeholder="(99) 9 9999-9999" required>
+                <div class="invalid-feedback">
+                  Campo obrigatório.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="endereço">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Insira o Endereço" required>
+                <div class="invalid-feedback">
+                  Por favor insira seu endereço.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                <div class="invalid-feedback">
+                  Campo obrigatório.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="estado">Estado</label>
+                <select class="form-control" id="estado" name="estado">
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                  <option value="EX">Estrangeiro</option>
+                </select>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" id="cep" placeholder="12.345-678" required>
+                <div class="invalid-feedback">
+                  Campo obrigatório.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class=" mb-5 container row">
+              <div class="col-md-6 mb-3">
+                <button class="btn botao-pr btn-lg btn-block" type="submit">Enviar</button>
+              </div>
+              <div class="col-md-6 mb-3">
+                <button class="btn botao-pr btn-lg btn-block" type="reset">Limpar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- FIM - Formulário Cadastro-->
+
+
+  <footer>
+    <!-- Footer Start-->
+    <div class="footer-area">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4">
+            <div class="mb-50">
+              <div class="mb-30">
+                <div class="footer-tittle">
+                  <div class="footer-sobre">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                      labore.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                      labore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+            <div class="mb-50">
+              <div class="footer-col">
+                <h4>Contatos</h4>
+                <ul>
+                  <li> BookStore</li>
+                  <li> Endereço</li>
+                  <li> +55 71 9 9999-9999</li>
+                  <li> mail@example.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+            <div class="mb-50">
+              <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="sacola.html">Carrinho</a></li>
+                  <li><a href="#">Cadastre-se</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer bottom -->
+
+      </div>
+    </div>
+    <div class="container-fluid footer-bottom">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div>
+            <p>Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> BookStore</p>
+          </div>
+
+          <div id="footer-social">
+            <a href="mailto:webmaster@example.com"><i class="fas fa-envelope fa-lg"></i></a>
+            <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End-->
+    
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="js/formulario.js"></script>
+</body>
+
+</html>

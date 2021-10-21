@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BookStore | Meu Perfil - Lista de Produtos</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!--INICIO - Menu de Navegação-->
+  <div class="container-fluid bg-warning">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/bookstore.png" height="50" alt="BookStore">
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"><i
+          class="fas fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav col-5">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="sobre.html" class="nav-item nav-link">Quem somos</a>
+          <a href="faq.html" class="nav-item nav-link">Dúvidas</a>
+          <a href="contato.html" class="nav-item nav-link">Contato</a>
+        </div>
+        <!--Pesquisar-->
+        <form class="menu-form col-xl-4 col-lg-4 col-md-3 col-sm-3">
+          <input type="text" placeholder="Pesquise em nosso site...">
+          <button><i class="fas fa-search"></i></button>
+        </form>
+        <!--Menu Lateral-->
+        <div class="col-xl-3">
+          <div class="menu-lateral">
+            <div class="menu-icon">
+              <i class="fas fa-user"></i>
+              <!--Login-->
+              <a class="menu-inferior" href="#">Meu Perfil</a>
+              <div class="menu-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <a href="sacola.html">Carrinho</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--menu-inferior-->
+  <nav class="menu-bottom">
+    <div class="container">
+      <ul class="menu-inferior row justify-content-center">
+        <li><a href="#"> Desenvolvimento</a>
+          <ul class="sub-menu">
+            <li><a href="desenvolvimento-pessoal.html">Desenvolvimento Pessoal</a></li>
+            <li><a href="desenvolvimento-financeiro.html">Desenvolvimento Financeiro</a></li>
+          </ul>
+        </li>
+        <li><a href="ficcao.html">Ficção</a></li>
+        <li><a href="romance.html">Romance</a></li>
+        <li><a href="infantil.html">Infantil</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--FIM - Menu de Navegação-->
+
+  <!--LISTA-->
+  <main>
+
+    <section class="container mt-5">
+      <div class="row mb-4">
+        <div class="align-center ">
+          <h1 class="text-center mr-4 ">Livros</h1>
+        </div>
+        <input class="form-control align-self-center col-lg-4 col-md-3" type="text" name="filtro" id="InputFiltrar"
+          placeholder="Filtre pelo título do livro.">
+      </div>
+
+      <table class="container table">
+        <thead class="text-uppercase thead-dark">
+          <tr>
+            <div>
+              <th class="t1">Capa</th>
+              <th class="t2">Descrição</th>
+              <th class="t3">Disponibilidade</th>
+            </div>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="livro">
+            <td class="t1 height-Line-table">
+              <img src="img/livro13.jpg" height="200" alt="a culpa é das estrelas">
+            </td>
+            <td class="t2 height-Line-table">
+              <div class="text-uppercase font-weight-bold">
+                <label class="info-titulo">a culpa é das estrelas</label>
+              </div>
+              <div class="small font-italic">
+                <p>John Green</p>
+                <p>Editora:</p>
+                <p>Ano:</p>
+                <p>Idioma: Português</p>
+                <p>Gênero: Romance</p>
+              </div>
+            </td>
+            <td class="t3 height-Line-table">
+              <button id="btnAddAoCarrinho" type="button" class="btn btn-success">Adicionar ao carrinho <i
+                  class="fas fa-shopping-cart"></i></button>
+              <label class="text-primary" style="font-size:large;"><br \>Preço: R$ 65,00</label>
+            </td>
+          </tr>
+
+          <tr class="livro">
+            <td class="t1 height-Line-table">
+              <img src="img/livro2.jpg" height="200" alt="o poder do hábito">
+            </td>
+            <td class="t2 height-Line-table">
+              <div class="text-uppercase font-weight-bold">
+                <label class="info-titulo">o poder do hábito</label>
+              </div>
+              <div class="small font-italic">
+                <p>Charles Duhigg</p>
+                <p>Editora: </p>
+                <p>Ano:</p>
+                <p>Idioma: Português</p>
+                <p>Gênero: Desenvolvimento Pessoal</p>
+              </div>
+            </td>
+            <td class="t3 height-Line-table">
+              <button id="btnAddAoCarrinho" type="button" class="btn btn-success">Adicionar ao carrinho <i
+                  class="fas fa-shopping-cart"></i></button>
+              <label class="text-primary" style="font-size:large;"><br \>Preço: R$ 50,00</label>
+            </td>
+          </tr>
+
+          <tr class="livro">
+            <td class="t1 height-Line-table">
+              <img src="img/livro6.jpg" height="200" alt="guia do pai rico">
+            </td>
+            <td class="t2 height-Line-table">
+              <div class="text-uppercase font-weight-bold">
+                <label class="info-titulo">guia do pai rico</label>
+              </div>
+              <div class="small font-italic">
+                <p>Robert T. Kiyosaki</p>
+                <p>Editora: </p>
+                <p>Ano:</p>
+                <p>Idioma: Português</p>
+                <p>Gênero: Desenvolvimento Financeiro</p>
+              </div>
+            </td>
+            <td class="t3 height-Line-table">
+              <button id="btnAddAoCarrinho" type="button" class="btn btn-success">Adicionar ao carrinho <i
+                  class="fas fa-shopping-cart"></i></button>
+              <label class="text-primary" style="font-size:large;"><br>Preço: R$ 39,00</label>
+            </td>
+          </tr>
+
+          <tr class="livro">
+            <td class="t1 height-Line-table">
+              <img src="img/livro17.jpg" height="200" alt="chapeuzinho Amarelo">
+            </td>
+            <td class="t2 height-Line-table">
+              <div class="text-uppercase font-weight-bold">
+                <label class="info-titulo">chapeuzinho Amarelo</label>
+              </div>
+              <div class="small font-italic">
+                <p>Chico Buarque</p>
+                <p>Editora: </p>
+                <p>Ano:</p>
+                <p>Idioma: Português</p>
+                <p>Gênero: Infantil</p>
+              </div>
+            </td>
+            <td class="t3 height-Line-table">
+              <button id="btnAddAoCarrinho" type="button" class="btn btn-success">Adicionar ao carrinho <i
+                  class="fas fa-shopping-cart"></i></button>
+              <label class="text-primary" style="font-size:large;"><br>Preço: R$ 25,00</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <!--FIM - LISTA-->
+
+  <!-- Footer Start-->
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4">
+            <div class="mb-50">
+              <div class="mb-30">
+                <div class="footer-tittle">
+                  <div class="footer-sobre">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                      labore.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+                      labore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+            <div class="mb-50">
+              <div class="footer-col">
+                <h4>Contatos</h4>
+                <ul>
+                  <li> BookStore</li>
+                  <li> Endereço</li>
+                  <li> +55 71 9 9999-9999</li>
+                  <li> mail@example.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+            <div class="mb-50">
+              <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="sacola.html">Carrinho</a></li>
+                  <li><a href="cadastro.html">Cadastre-se</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+      </div>
+    </div>
+    <div class="container-fluid footer-bottom">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div>
+            <p>Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> BookStore</p>
+          </div>
+
+          <div id="footer-social">
+            <a href="mailto:webmaster@example.com"><i class="fas fa-envelope fa-lg"></i></a>
+            <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End-->
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="js/filtrarLivro.js"></script>
+</body>
+
+</html>
